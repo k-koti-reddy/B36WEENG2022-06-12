@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border : 2px solid;
+            padding: 5px 15px 10px 10px;
+            display:inline-block;
+        }
+        .heading {
+            margin:0;
+            padding:5px 10px;
+            background-color: red;
+            color:white;
+        }
+        .heading-span{
+            font-style:oblique;
+        }
+        .form-body {
+            padding: 10px;
+        }
+        .input-text {
+            border: 0;
+            border-bottom: 2px solid;
+            width: 90%;
+        }
+        table {
+            width: 100%;
+        }
+        .bold-label {
+            font-weight: bold;
+        }
+        .input-button {
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <h1 class="heading"> Yes! I want to subscribe to <span class="heading-span">Mag-O-Zine</span></h1>
+        <form class="form-body">
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" name="fname" class="input-text">
+                        <br>
+                        <label for="fname">First Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="lname" class="input-text">
+                        <br>
+                        <label for="lname">Last Name</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="lname" class="input-text">
+                        <br>
+                        <label for="lname">Address</label>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" name="city" class="input-text">
+                        <br>
+                        <label for="city">City</label>
+                    </td>
+                    <td>
+                        <input type="text" name="state" class="input-text">
+                        <br>
+                        <label for="state">State</label>
+                    </td>
+                    <td>
+                        <input type="text" name="zip" class="input-text">
+                        <br>
+                        <label for="zip">Zip</label>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <span class="bold-label">Subscribe for: </span>
+            <input class="input-radio" type="radio" name="subscribe" value="1year">
+            <label for="subscribe" class="bold-label">1 year ($19.95)</label>
+            <input class="input-radio" type="radio" name="subscribe" value="2years">
+            <label for="subscribe" class="bold-label">2 years ($35)</label>
+            
+            <br>
+            <span class="bold-label">Send me more information about:</span>
+            <br>
+            <input id="computer-zine" type="checkbox" name="computer-zine" checked>
+            <label for="computer-zine">Computer-Zine</label>
+            <br>
+            <input id="fishing-zine" type="checkbox" name="fishing-zine">
+            <label for="fishing-zine">Fishing-Zine</label>
+            <br>
+            <input id="cat-o-zine" type="checkbox" name="cat-o-zine" checked>
+            <label for="cat-o-zine">Cat-O-Zine</label>
+        </form>
+    </div>
+</body>
+</html>
